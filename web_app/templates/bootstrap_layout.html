@@ -2,8 +2,9 @@
 <html>
   <head>
     <title> Intro to Python | Web-application Demonstration</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <STYLE type="text/css">
+      H1 {border-width: 1; border: solid; text-align: center}
+    </STYLE>
   </head>
 
   <body>
@@ -27,6 +28,7 @@
     <!-- see: https://getbootstrap.com/docs/4.0/components/navbar/ -->
     {% set nav_links = [
       ('/about', 'about', 'About'),
+      ('/moving', 'new_user', 'Moving Fee'),
       ('/users/new', 'new_user', 'Sign Up')
     ] -%}
     {% set active_page = active_page|default('index') -%}
