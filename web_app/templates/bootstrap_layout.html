@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>My Starter Web App | Learning how to use the Flask Python package</title>
+    <title> Intro to Python | Web-application Demonstration</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
@@ -14,7 +14,7 @@
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
         {% for category, message in messages %}
-          <div class="alert alert-{{ category }} alert-dismissible" role="alert" style="margin-bottom:0px;">
+          <div class="alert alert-{{ category }} alert-dismissible" role="alert" style="margin-bottom:20px;">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             {{ message }}
           </div>
@@ -31,7 +31,7 @@
     ] -%}
     {% set active_page = active_page|default('index') -%}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="/">My Web App</a>
+      <a class="navbar-brand" href="/"> Intro to Python - Moving Fee Application </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -62,8 +62,8 @@
       <!-- FOOTER -->
       <div id="footer">
         <hr>
-        &copy; Copyright 2020 [Your Name Here] |
-        <a href="https://github.com/prof-rossetti/daily-briefings-py">source</a>
+        &copy; Copyright 2020 [Wesley Kim] | Moving Fee Application
+        
       </div>
     </div>
 
