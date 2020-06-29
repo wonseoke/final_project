@@ -58,18 +58,3 @@ def create_inquiry():
     # ... and the flash messaging section of the "bootstrap_layout.html" file for more details
     flash(f"Quote bid by '{inquiries['email_address']}' created successfully! Please await for a willing mover to contact you", "success")
     return redirect("/")
-
-@home_routes.route("/lookup", methods=["GET", "POST"])
-def weather_forecast():
-    print("GENERATING A WEATHER FORECAST...")
-
-    if request.method == "POST":
-        print("FORM DATA:", dict(request.form)) #> {'zip_code': '20057'}
-        zip_code = request.form["zip_code"]
-    elif request.method == "GET":
-        print("URL PARAMS:", dict(request.args))
-        zip_code = request.args["zip_code"] #> {'zip_code': '20057'}
-
-    results = get_hourly_forecasts(zip_code)
-    print(results.keys())
-    return render_template("moving.html", zip_code=zip_code, results=results)
