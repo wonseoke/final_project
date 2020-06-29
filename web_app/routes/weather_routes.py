@@ -11,7 +11,7 @@ def weather_form():
     print("VISITED THE WEATHER FORM...")
     return render_template("weather_form.html")
 
-@weather_routes.route("/weather/forecast", methods=["GET", "POST"])
+@weather_routes.route("/lookup", methods=["GET", "POST"])
 def weather_forecast():
     print("GENERATING A WEATHER FORECAST...")
 

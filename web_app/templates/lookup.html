@@ -1,31 +1,11 @@
 {% extends "bootstrap_layout.html" %}
-{% set active_page = "moving" %}
+{% set active_page = "lookup" %}
 
 {% block content %}
 
     <h1>Moving Fee Calc Page</h1>
 
-    <p>Your bid for movers' service:</p>
-
-    <table style="width:30%">
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
-      <br><br><br>
-
+    <p>Input the zip codes of origin, destination, and moving size</p>
 
     <form action="/inquiry" method="POST">
 
@@ -53,5 +33,6 @@
 
         <button>Submit</button>
     </form>
+
 
 {% endblock %}
