@@ -23,7 +23,7 @@ Then, from within the virtual environment, install package dependencies:
 pip install -r requirements.txt
 ```
 
-Obtain API Keys from the [Zip Code](hhttps://www.zipcodeapi.com/)
+Obtain API Keys from the [Zip Code](hhttps://www.zipcodeapi.com/) / https://www.zipcodeapi.com/API#distance
  Create a new file called ".env" in the root directory of this repo, and paste the following contents inside, using your own values as appropriate:
 
 ```sh
