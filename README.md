@@ -1,4 +1,4 @@
-# Daily Briefings Service (Python)
+# Moving Quote Service
 
 Calculates an estimated or minimum quote that you should expect for moving
 
