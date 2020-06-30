@@ -41,7 +41,7 @@ worker = 0  ## to note number of workers
 hours = 0   ## to note number of hours to be spent
 
 size_move = input(
-    "Studio to 1 Bedroom: s1 /// 1 Bedroom to 2 Bedroom: s2 /// Home up to 2 bedrooms: s3 /// 2 Bedroom Home to 3 Bedroom Apt: s4 /// 3 Bedroom Home to 4 Bedroom Home: s5 :"
+    "Studio to 1 Bedroom: s1 | 1 Bedroom to 2 Bedroom: s2 | Home up to 2 bedrooms: s3 | 2 Bedroom Home to 3 Bedroom Apt: s4 | 3 Bedroom Home to 4 Bedroom Home: s5 :"
     ) #to accept USER INPUT of the size of the move
 ## Studio to 1 Bedroom == s1
 ## 1 Bedroom to 2 Bedroom  == s2
