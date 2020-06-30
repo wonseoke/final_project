@@ -23,8 +23,11 @@ zip_code_destination = input("Zip Cod of Destination: ") #to accept USER INPUT o
 
 request_url_dist = f"https://www.zipcodeapi.com/rest/{api_key}/distance.json/{zip_code_origin}/{zip_code_destination}/mile"
 
+
 response = requests.get(request_url_dist) 
 parsed_response = json.loads(response.text)  ##parses into json form
+
+
 
 dist = parsed_response["distance"]  ##outputs the distance between the origin and destination
 if dist > 200:
