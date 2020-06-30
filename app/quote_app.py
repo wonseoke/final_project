@@ -27,6 +27,8 @@ response = requests.get(request_url_dist)
 parsed_response = json.loads(response.text)  ##parses into json form
 
 dist = parsed_response["distance"]  ##outputs the distance between the origin and destination
+if dist > 200:
+    print("Too far for our version of quote estimator") & exit()
 
 fc_truck = 0  ## to note Fixed Cost of borrowing a truck
 ## 10' Truck	$20
